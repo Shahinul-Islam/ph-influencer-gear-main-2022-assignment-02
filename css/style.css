@@ -1,0 +1,140 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+/* common styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------- 
+       hero
+-------------*/
+main.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 80%; */
+}
+.hero-left{
+    margin: 0 120px;
+}
+
+h1.hero-title {
+    font-size: 52px;
+    color: #3A3A3A;
+}
+.hero-left p{
+    font-size: 16px;
+}
+.hero-btn button{
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    height: 44px;
+    width: 196px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-arrow{
+    margin-left: 6px;
+    margin-top: 5px;
+    color: #ffffff!important;
+}
+
+img.hero-img-1 {
+    position: relative;
+    transform: translate(10px, 250px);
+    z-index: -1;
+}
+img.hero-img-2 {
+    position: relative;
+    transform: translate(10px, -207px);
+}
+
+/*----------------
+    advertise
+-------------------*/
+.advertise{
+    text-align: center;
+}
+.advertise img{
+    margin-right: 60px;
+}
+
+hr{
+    width: 1110px;
+    border-color: #c0ccda1a;;
+    border-width: 1px;
+    
+}
+
+/*-------------------
+popular collection
+---------------------*/
+.collection-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.collection{
+    width:329px;
+    height: 446px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px lightgray;
+    padding: 17px 15px;
+    margin: 15px;
+}
+.thumbnail{
+    height: 256px;
+    width: 300px;
+    margin: 0 auto;
+}
+.collection-desc{
+    margin-left: 15px;
+}
+.collection-name{
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.collection-price{
+    font-size: 24px;
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    margin-top: -62px;
+    margin-bottom: -22px;
+}
+.fas{
+    color: #ffa600d7;
+    font-size: 14px;
+}
+.ratings p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.collection-delivery{
+    font-size: 14px;
+    color: #787885;
+    font-family: 'Inter';
+    line-height: 19px;
+}
