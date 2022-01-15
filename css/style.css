@@ -45,7 +45,7 @@ h1.hero-title {
 .btn-arrow{
     margin-left: 6px;
     margin-top: 5px;
-    color: #ffffff!important;
+    color: #ffffff;
 }
 
 img.hero-img-1 {
@@ -122,7 +122,7 @@ popular collection
     margin-top: -62px;
     margin-bottom: -22px;
 }
-.fas{
+.ratings .fas{
     color: #ffa600d7;
     font-size: 14px;
 }
@@ -141,8 +141,37 @@ popular collection
 .see-more{
     color: #e02c6dde;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     float:right;
     position: relative;
     margin: 30px;
+}
+
+/*---------------
+      footer
+----------------*/
+footer{
+    text-align: center;
+    background-color:#0a0826 ;
+    margin-top: 100px;
+    padding: 10px 0;
+
+}
+footer h4{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+footer p{
+    font-size: 14px;
+    color: #ffffff;
+}
+footer .fab{
+    color: #ffffff;
+    background-color: #e6e6e61a;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 0 4px;
 }
