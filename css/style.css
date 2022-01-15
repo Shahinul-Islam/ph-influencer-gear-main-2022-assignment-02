@@ -241,6 +241,7 @@ footer{
     background-color:#0a0826 ;
     margin-top: 100px;
     padding: 10px 0;
+    width: 100%;
 
 }
 footer h4{
@@ -263,13 +264,14 @@ footer .fab{
 }
 
 /* ----------------------
-make it responsive
+make it responsive-mobile
 --------------------- */
 @media screen and (max-width: 576px){
     
     .navbar{
         display: flex;
         justify-content: space-between;
+        /* width: 100%; */
     }
     .logo{
         padding: 0;
@@ -288,20 +290,14 @@ make it responsive
         padding: 0;
     }
 
-
-
-
-
-
-
-
     main.hero{
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 120px 0;
         width: 100%;
         align-items: center;
         flex-wrap: nowrap;
+        overflow-x: hidden;
     }
     .hero-left{
         order:1;
@@ -310,10 +306,13 @@ make it responsive
     .hero-right{
         transform: translate(2%,-200px);
     }
-    .hero-img-2,.hero-img-1{
+    /* .hero-img-2,.hero-img-1{
+
+        width: 100%;
+        height: auto;
         width: 380px;
-        height: 380px;
-    }
+        height: 380px; 
+    } */
 
     .advertise{
         display: flex;
@@ -334,8 +333,63 @@ make it responsive
    .deals-products{
        margin-bottom: 20px;
    }
-/* header{
+}
+/* responsive for tablet */
+
+@media screen and (min-width:577px) and (max-width:768px){
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        padding: 0;
+        margin: 0 10px;
+    }
+    .links{
         display: none;
-       
-    } */
+    }
+    .links a{
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .top-icons{
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    main.hero{
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        align-items: center;
+    }
+    .hero-left{
+        transform: translate(12%,-280px);
+    }
+    .hero-right{
+        transform: translate(2%,-200px);
+    }
+
+    .advertise{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -240px;
+    }
+    .advertise img{
+        margin: 10px;
+    }
+   .collections{
+       grid-template-columns: repeat(2,1fr);
+   }
+   .deals{
+       width: 100vw;
+       grid-template-columns: 1fr;
+   }
+   .deals-products{
+       margin-bottom: 20px;
+       width: 100%;
+   }
+  
 }
