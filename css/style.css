@@ -60,11 +60,11 @@ body{
 /*---------- 
        hero
 -------------*/
-main.hero {
+.hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-top: -200px;
+    margin-top: 70px;
 }
 .hero-left{
     margin: 0 120px;
@@ -93,17 +93,6 @@ h1.hero-title {
     margin-top: 5px;
     color: #ffffff;
 }
-
-img.hero-img-1 {
-    position: relative;
-    transform: translate(10px, 250px);
-    z-index: -1;
-}
-img.hero-img-2 {
-    position: relative;
-    transform: translate(10px, -207px);
-}
-
 /*----------------
     advertise
 -------------------*/
@@ -270,8 +259,81 @@ make it responsive-mobile
     
     .navbar{
         display: flex;
-        justify-content: space-between;
-        /* width: 100%; */
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        padding: 0;
+        margin: 0 0;
+    }
+    .logo h3{
+        font-size: 16px;
+    }
+    .links{
+        display: none;
+        
+    }
+    .links a{
+        padding: 0;
+        margin: 0;
+        display: none;
+        
+    }
+    .top-icons{
+        margin: 0 auto;  
+        padding: 0;
+        margin: 0 auto;
+    }
+/* footer{
+        display: none;
+    } */
+    main.hero{
+        display: flex;
+        flex-direction: column;}
+    .hero-left{
+        order: 1;}
+    .hero-left .hero-title{
+        font-size: 32px;
+        margin-top: 0px;
+        }
+    .hero-img-1{
+        height: 286px;
+        width: 286px;
+        }
+    
+    .advertise{
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advertise img{
+        margin: 10px;
+    }
+    .collection-title{
+        font-size: 24px;
+    }
+    .collections{
+        grid-template-columns: 1fr;
+    }
+    .deals{
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+   .deals-products{
+       margin-bottom: 20px;
+   } 
+}
+/*--------------------
+responsive for tablet
+----------------------*/
+
+@media screen and (min-width:577px) and (max-width:768px){
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
     }
     .logo{
         padding: 0;
@@ -293,89 +355,30 @@ make it responsive-mobile
     main.hero{
         display: flex;
         flex-direction: column;
-        margin: 120px 0;
+        margin-top: 40px;
         width: 100%;
         align-items: center;
-        flex-wrap: nowrap;
-        overflow-x: hidden;
+    }
+    .hero-left .hero-title{
+        font-size: 32px;
     }
     .hero-left{
         order:1;
-        transform: translate(12%,-280px);
+        margin-bottom: 133px 0;
+        margin: 50px 10px;
     }
     .hero-right{
-        transform: translate(2%,-200px);
+        margin: 0px 10px;
     }
-    /* .hero-img-2,.hero-img-1{
-
-        width: 100%;
-        height: auto;
-        width: 380px;
-        height: 380px; 
-    } */
-
-    .advertise{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -240px;
-    }
-    .advertise img{
-        margin: 10px;
+    .hero-img-1{
+        width: 300px;
+        height: 300px; 
     }
    
-    .collections{
-        grid-template-columns: 1fr;
-    }
-    .deals{
-        grid-template-columns: 1fr;
-        margin-bottom: 20px;
-    }
-   .deals-products{
-       margin-bottom: 20px;
-   }
-}
-/* responsive for tablet */
-
-@media screen and (min-width:577px) and (max-width:768px){
-
-    .navbar{
-        display: flex;
-        justify-content: center;
-    }
-    .logo{
-        padding: 0;
-        margin: 0 10px;
-    }
-    .links{
-        display: none;
-    }
-    .links a{
-        padding: 0;
-        margin: 0;
-        display: none;
-    }
-    .top-icons{
-        margin: 0 10px;
-        padding: 0;
-    }
-
-    main.hero{
-        display: flex;
-        justify-content: center;
-        margin-top: 200px;
-        align-items: center;
-    }
-    .hero-left{
-        transform: translate(12%,-280px);
-    }
-    .hero-right{
-        transform: translate(2%,-200px);
-    }
-
     .advertise{
         display: flex;
         flex-wrap: wrap;
-        margin-top: -240px;
+        margin-top: 40px;
     }
     .advertise img{
         margin: 10px;
