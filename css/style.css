@@ -9,6 +9,50 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/* header  */
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin: 20px 120px;
+}
+.links ul{
+    display: inline-block;
+}
+.links li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+   
+}
+.links ul li a{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.links ul li a:hover{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.top-icons{
+    margin-right: 100px;
+}
+.links, .top-icons{
+    margin-left: auto;
+}
+.h6,.w-6{
+    height: 25px;
+    width: 25px;
+}
 
 /*---------- 
        hero
@@ -17,6 +61,7 @@ main.hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: -200px;
     /* max-width: 80%; */
 }
 .hero-left{
@@ -27,6 +72,7 @@ h1.hero-title {
     font-size: 52px;
     color: #3A3A3A;
 }
+
 .hero-left p{
     font-size: 16px;
 }
