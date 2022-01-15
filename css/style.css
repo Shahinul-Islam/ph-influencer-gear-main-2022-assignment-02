@@ -83,6 +83,7 @@ popular collection
     font-size: 28px;
     font-weight: 600;
     color: #3A3A3A;
+    margin: 70px 0;
 }
 .collections{
     display: grid;
@@ -145,6 +146,12 @@ popular collection
     float:right;
     position: relative;
     margin: 30px;
+}
+/*---------------
+deals and outlet
+-------------- */
+.deals-products{
+    background-image: url(images/bg-1.jpg);
 }
 
 /*---------------
