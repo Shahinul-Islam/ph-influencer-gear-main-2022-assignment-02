@@ -150,10 +150,43 @@ popular collection
 /*---------------
 deals and outlet
 -------------- */
-.deals-products{
-    background-image: url(images/bg-1.jpg);
+.deals{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
+.deals-products{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 340px;
+  padding: 20px;
+  margin: 0 20px;
+}
+.deals-products h3{
+    color: #ef837b;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.sub-title{
+    color: #777;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.deals-products a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-weight: 500;
+    font-size: 20px;
+}
+.deals-products p{
+    color: #E02C6D;
+    font-size: 24px;
+}
+.deals-products p span{
+    text-decoration: line-through;
+}
 /*---------------
       footer
 ----------------*/
